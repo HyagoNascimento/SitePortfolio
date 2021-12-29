@@ -583,13 +583,13 @@ padding-left: 0;
     height: 1200px;
   }
   .line{
-    font-size: 23px;
+    font-size: 22px;
   }
   /* Keyframes para animação do Home */
   @keyframes typing{
     from{
       width: 0 ;
     }
-    to{ width: 956px }
+    to{ width: 900px }
   } 
 }
