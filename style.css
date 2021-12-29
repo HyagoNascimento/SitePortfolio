@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-*{
+*{  
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body{
+  
   font-family: 'Oswald', sans-serif;
     background-color: black;
 }
 /*Sessão style menu superior*/
 #menu{
-  transform: translateY(0px);
     background-color: rgb(39, 39, 39);
     width: 100%;
     height: 50px;
@@ -30,7 +30,6 @@ li{
 li a{
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
- 
   color:rgb(139, 138, 138) ;
 }
 
@@ -47,6 +46,10 @@ ul{
 #logo{
   padding-top: -5px;
   padding-left: 550px;
+}
+#logo-img{
+  width: 400px; 
+  height: 40px;
 }
 /*Configurando sessão Home*/
 
@@ -87,7 +90,6 @@ ul{
 } 
 /* Configurando sessão Skills */
 #skill{
-  
   text-align: center;
   height: 500px;
   background-color: white;
@@ -111,16 +113,26 @@ font-size: 20px;
 }
 .icon-skill{
   margin-right: 5px;
+  width: 70px;
+  height: 70px;
 }
-
+#icon-skill{
+  height: 75px;width:200px;
+}
 h4{
   font-size: 25px;
+}
+
+#skill h4{
+  color: black;
 }
 
 h2,h3{
   font-size: 35px;
 }
-
+.svg-cima{
+  margin-top:-120px;
+}
 /* Configurando a sessão projetos */
 
   #project{
@@ -162,6 +174,7 @@ h2,h3{
     width: 25rem;
     height: 18rem;
   }
+/* Configurando a sessão About */
 #about{
   text-align: center;
   height:500px;
@@ -184,6 +197,10 @@ h2,h3{
   text-align: center;
   width: 450px;
   height: 340px;
+}
+
+.svg-baixo{
+  margin-bottom:-90px;
 }
 
 /* Configurando a sessão contatos */
@@ -216,9 +233,363 @@ transition: .3s;
 }
 
 /* Configurando as rodape */
-#rodape{
+#rodape-text{
   text-align: center;
   background-color: black;
   color: white;
 }
+section{
+  width: 100%;
+}
  
+/* ----------------------------- Criando responsividade do site: -----------------------------
+-----------------------     Otimizando para diferentes resoluções       -----------------------  */
+@media screen and (min-width: 3840px) {
+
+
+/*Sessão style menu superior*/
+#menu {
+  height: 150px;
+}
+li{
+font-size: 70px;
+}
+li a:hover{
+font-size: 82px;
+}
+
+#logo{
+position: absolute;
+left: 60%;
+}
+#logo-img{
+  width: 800px; 
+  height: 150px;
+}
+/*Configurando sessão Home*/
+#home{
+  padding-top: 15%;
+  height: 1500px;
+}
+.line{
+  font-size: 50px;
+}
+/* Keyframes para animação do Home */
+@keyframes typing{
+  from{
+    width: 0 ;
+  }
+  to{ width:2080px }
+} 
+/* Configurando sessão Skills */
+#skill{
+  height: 1000px;
+}
+.skill-container{
+  width: 700px;
+}
+.skill-container p{
+font-size: 20px;
+}
+.icon-skill{
+  margin-right: 5px;
+  width: 150px;
+  height: 150px;
+}
+#icon-skill{
+  width: 270px;
+  height: 150px;
+}
+#skill h4{
+  font-size: 80px;
+}
+h2,h3{
+  font-size: 100px;
+}
+#skill p{
+  font-size: 60px;
+}
+ .svg-cima{
+ margin-top: -320px;
+ }
+/* Configurando a sessão projetos */
+#project{
+  height:2700px;
+}
+h4{
+font-size:80px;
+}
+#project p{
+  font-size: 60px;
+}
+.project-container-text{
+  height: 1000px;
+}
+#project-box{
+  width: 1000px;
+}
+.project-container{
+  width: 2700px;
+  height: 800px;
+}
+.project-img{
+  width: 50rem;
+  height: 30rem;
+}
+/* Configurando a sessão About */
+#about{
+  height:1200px;
+}
+#img-personality{
+  width: 900px;
+  height: 400px;
+}
+#about p{
+  font-size: 50px;
+}
+.about-container{
+  margin-left: 15px;
+  width: 800px;
+  height: 340px;
+}
+.svg-baixo{
+  margin-bottom:-260px;
+}
+
+/* Configurando a sessão contatos */
+#contatos{
+  height: 700px;
+}
+#contatos h2{
+  padding-top: 100px;
+}
+#icones_contatos a {
+	font-size: 280px;
+	width: 300px;
+	height: 290px;
+  border:solid 10px rgb(39, 39, 39);
+
+}
+/* Configurando as rodape */
+#rodape-text{
+  font-size: 50px;
+  height: 35px;
+}
+
+}
+@media screen and (max-width: 1150px) {
+ 
+ 
+  /*Sessão style menu superior*/
+  #menu {
+    height: 100px;
+  }
+  li a{
+  display: none;
+  }
+  #logo{
+    position: absolute;
+    top: 68%;
+    left: 26%;
+    transform: translate(-50%,-50%);
+  }
+  #logo-img{
+    width: 400px; 
+    height: 100px;
+  } 
+  /*Configurando sessão Home*/
+#home{
+  padding-top: 45%;
+  height: 1200px;
+}
+.line{
+  font-size: 25px;
+}
+/* Keyframes para animação do Home */
+@keyframes typing{
+  from{
+    width: 0 ;
+  }
+  to{ width: 1025px }
+} 
+/* Configurando sessão Skills */
+#skill{
+  height: 2000px;
+}
+#skill-box{
+  display: grid;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.skill-container{
+  width: 700px;
+  height: fit-content;
+  
+  padding-bottom: 30px;
+}
+.skill-container p{
+font-size: 20px;
+}
+.icon-skill{
+  margin-right: 5px;
+  width: 150px;
+  height: 150px;
+}
+#icon-skill{
+  width: 270px;
+  height: 150px;
+}
+#skill h4{
+  font-size: 80px;
+}
+h2,h3{
+  font-size: 100px;
+}
+#skill p{
+  font-size: 60px;
+}
+/* Configurando a sessão projetos */
+#project{
+  height:5000px;
+}
+h4{
+font-size:80px;
+}
+#project p{
+  font-size: 60px;
+}
+.project-container-text{
+  height: 1100px;
+  margin: auto;
+}
+#project-box{
+  width: 1000px;
+}
+.project-container{
+  width: 2750px;
+  height: 800px;
+  display: table-cell;
+  
+}
+.project-img{
+  width: 50rem;
+  height: 30rem;
+}
+/* Configurando a sessão About */
+#about{
+  height:2500px;
+}
+#about-box{
+display: table-cell;
+margin: auto;
+padding-left: 0;
+}
+#img-personality{
+  width: 950px;
+  height: 450px;
+}
+#about p{
+  font-size: 70px;
+}
+.about-container{
+  transform: translate(40px, 40px);
+  margin-left: 0;
+  width: 1000px;
+  height: 900px;
+}
+
+/* Configurando a sessão contatos */
+#contatos{
+  height: 700px;
+}
+#contatos h2{
+  padding-top: 100px;
+}
+#icones_contatos a {
+	font-size: 280px;
+	width: 300px;
+	height: 290px;
+  border:solid 10px rgb(39, 39, 39);
+
+}
+/* Configurando as rodape */
+#rodape-text{
+  font-size: 43px;
+  height: 40px;
+}
+
+}
+@media screen and (max-width: 1024px) {
+  body{
+    width: fit-content;
+  }
+  /*Configurando sessão Home*/
+#home{
+  padding-top: 45%;
+  height: 1200px;
+}
+.line{
+  font-size: 24px;
+}
+/* Keyframes para animação do Home */
+@keyframes typing{
+  from{
+    width: 0 ;
+  }
+  to{ width: 979px }
+} 
+}
+@media screen and (max-width: 960px) {
+    /*Configurando sessão Home*/
+#home{
+  padding-top: 45%;
+  height: 1200px;
+}
+.line{
+  font-size: 23px;
+}
+/* Keyframes para animação do Home */
+@keyframes typing{
+  from{
+    width: 0 ;
+  }
+  to{ width: 936px }
+} 
+}
+
+@media screen and (max-width: 500px) {
+    /*Configurando sessão Home*/
+    #home{
+      padding-top: 45%;
+      height: 1200px;
+    }
+    .line{
+      font-size: 23px;
+    }
+    /* Keyframes para animação do Home */
+    @keyframes typing{
+      from{
+        width: 0 ;
+      }
+      to{ width: 936px }
+    } 
+}
+
+@media screen and (max-width: 414px) {
+  /*Configurando sessão Home*/
+  #home{
+    padding-top: 45%;
+    height: 1200px;
+  }
+  .line{
+    font-size: 23px;
+  }
+  /* Keyframes para animação do Home */
+  @keyframes typing{
+    from{
+      width: 0 ;
+    }
+    to{ width: 936px }
+  } 
+}
